@@ -1,0 +1,61 @@
+/* Root variables and general styles remain the same */
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    /* Adjust navigation layout */
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .profile {
+        flex-direction: column; /* Stack profile image and text */
+        text-align: center;
+    }
+
+    .profile img {
+        width: 70px; /* Adjust image size */
+        height: 70px;
+    }
+
+    /* Adjust certificate section buttons for stacking */
+    .certificate .filter-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .certificate .courses {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+
+    .certificate .courses button {
+        width: 100%; /* Full-width buttons */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    footer img {
+        margin: 0 auto;
+        width: 2.5rem;
+    }
+}

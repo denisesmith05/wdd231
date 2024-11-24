@@ -1,0 +1,1 @@
+document.getElementById('lastUpdated').textContent = new Date().toLocaleString();

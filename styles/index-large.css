@@ -1,0 +1,197 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Root variables */
+:root {
+    --primary-color: #0B4272;
+    --secondary-color: #e7c24f;
+    --accent-color: #381d2a;
+    --light-background: #f9f9f9;
+    --text-color: #333;
+    --font-heading: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+/* Ensure the body and HTML fill the viewport */
+html, body {
+    height: 100%;
+    font-family: var(--font-heading);
+    margin: 0;
+    background-color: var(--light-background);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Main container takes up the remaining vertical space */
+main {
+    flex: 1; /* This makes the main content stretch to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures elements are spaced out */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    padding: 5rem;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    flex: 1; /* Allow the grid container to grow and fill space */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.coursework ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 5px;
+}
+
+/* Certificate section */
+.certificate .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.certificate button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.certificate button:hover {
+    background-color: var(--secondary-color);
+}
+
+.certificate .courses {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.certificate .courses button {
+    background-color: #ad6d31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.certificate .courses button:hover {
+    background-color: #f9b678;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom when content doesn't fill the page */
+    width: 100%; /* Ensures footer stretches full width */
+}
+.footer-content {
+    display: flex; /* Enables Flexbox for the text and image */
+    align-items: center; /* Vertically centers text and image */
+    justify-content: center; /* Keeps content in the center horizontally */
+    gap: 10px; /* Adds space between the text and image */
+}
+
+footer img {
+    width: 3rem;
+    justify-content: center;
+    align-content: center;
+}

@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  justify-content: space-between; /* Space out nav links and profile */
+  align-items: center; /* Align items vertically */
+  padding: 1rem;
+  background-color: #0B4272; /* Example nav background color */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Spacing between nav links */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #84afe6; /* Example hover effect */
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center; /* Center the image vertically */
+}
+
+.profile-pic img {
+  width: 40px; /* Set the size of the profile picture */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure proper cropping if needed */
+  border: 2px solid white; /* Optional border */
+}
