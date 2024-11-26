@@ -1,7 +1,7 @@
 document.getElementById('lastUpdated').textContent = new Date().toLocaleString();
 
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.querySelector('.navbar-toggler');
+    const toggleButton = document.getElementById('#navbar-toggler'); // Use correct ID
     const navLinks = document.querySelector('.navigation ul');
 
     toggleButton.addEventListener('click', () => {

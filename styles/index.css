@@ -1,7 +1,7 @@
 /* Root variables and general styles remain the same */
 
 /* Hamburger Button */
-.navbar-toggler {
+#navbar-toggler {
     display: none; /* Hidden by default */
     background-color: var(--primary-color);
     color: white;
@@ -23,7 +23,7 @@
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
-    .navbar-toggler {
+    #navbar-toggler {
         display: block; /* Show hamburger button on smaller screens */
         margin: 10px auto;
     }
