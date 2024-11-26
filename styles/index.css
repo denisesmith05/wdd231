@@ -1,95 +1,34 @@
-/* Root variables and general styles remain the same */
-
-/* Hamburger Button */
-#navbar-toggler {
-    display: none; /* Hidden by default */
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-/* Ensure navigation links are hidden initially on small screens */
-.navigation ul {
-    display: flex;
-    gap: 2rem;
-    flex-direction: row; /* Default horizontal layout for larger screens */
-    padding: 0;
-    margin: 0;
-}
-
-/* Responsive Design for Small Screens */
+/* Mobile View Styles (Screens less than 768px) */
 @media (max-width: 768px) {
-    #navbar-toggler {
-        display: block; /* Show hamburger button on smaller screens */
-        margin: 10px auto;
+    /* Navigation Menu */
+    .menu {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 10;
     }
-
-    .navigation ul {
-        flex-direction: column;
-        display: none;
-        gap: 1rem;
-        text-align: center;
+  
+    .menu.active {
+      display: flex;
     }
-
-    .navigation ul.active {
-        display: flex; /* Show navigation links when toggled */
+  
+    .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
     }
-
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        gap: 20px;
+  
+    .menu li {
+      margin: 0.5rem 0;
     }
-
-    section {
-        margin: 0 auto;
-        max-width: 90%; /* Take up most of the horizontal space */
+  
+    /* Course Card Layout */
+    .course {
+      width: calc(100% - 1rem);
     }
-
-    .profile {
-        flex-direction: column; /* Stack profile image and text */
-        text-align: center;
-    }
-
-    .profile img {
-        width: 70px; /* Adjust image size */
-        height: 70px;
-    }
-
-    /* Adjust certificate section buttons for stacking */
-    .certificate .filter-buttons {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .certificate .courses {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px;
-        width: 100%; /* Ensure buttons span full width */
-    }
-
-    .certificate .courses button {
-        width: 90%; /* Center buttons and span most of the space */
-        margin: 0 auto;
-        font-size: 1.1rem;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    footer img {
-        margin: 0 auto;
-    }
-
-/* 
-    footer img {
-        margin: 0 auto;
-        width: 2.5rem;
-    } */
-}
+  }
+  
