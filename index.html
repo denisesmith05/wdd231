@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WDD 231 Portfolio Page">
-  <meta name="author" content="Your Name">
-  <title>WDD 231 Portfolio</title>
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/index-large.css">
-  <script src="scripts/index.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denise S. Smith</title>
+    <meta name="description" content="Portfolio of Denise S. Smith showcasing coursework and certifications.">
+    <meta name="author" content="Denise S. Smith">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
+    <header>
+        <div class="profile">
+            <img src="images/index-profile.jpg" alt="Profile Picture">
+            <h1>Denise S. Smith</h1>
+        </div>
+    </header>
     <nav>
-      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <ul class="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#">Chamber</a></li>
-        <li><a href="#">GitHub Profile</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://github.com/denisesmith05/wdd231.git">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/denise-smith-b69133223">LinkedIn</a></li>
+        </ul>
     </nav>
-  </header>
-  
-  <main>
-    <section>
-      <h2>Course Work</h2>
-      <div class="course-filters">
-        <button onclick="filterCourses('all')">All Courses</button>
-        <button onclick="filterCourses('WDD')">WDD Courses</button>
-        <button onclick="filterCourses('CSE')">CSE Courses</button>
-      </div>
-      <p id="totalCredits">Total Credits: 0</p>
-      <div id="courses" class="courses"></div>
-    </section>
-
-    <section>
-      <h2>Toloria, Madagascar</h2>
-      <p>Learn about our projects in Toloria, Madagascar, and how we're helping build sustainable futures.</p>
-    </section>
-
-    <section>
-      <h2>Certificate in Web and Computer Programming</h2>
-      <p>This program offers courses in web and software development to help students achieve their career goals.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="currentYear"></span> Your Name, [Your State/Country]</p>
-    <p id="lastModified"></p>
-  </footer>
+    <main>
+        <div class="grid-container">
+            <section class="coursework">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Project 1</li>
+                    <li>Project 2</li>
+                    <li>Project 3</li>
+                </ul>
+            </section>
+            <section class="location">
+                <h2>Cañon City, Colorado</h2>
+                <figure>
+                    <img src="images/cañon-city.jpg" alt="Royal Gorge Bridge">
+                    <figcaption>Royal Gorge Bridge</figcaption>
+                </figure>
+            </section>
+        </div>
+        <section>
+            <h2>Course Work</h2>
+            <div class="course-filters">
+                <button onclick="filterCourses('all')">All Courses</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
+            </div>
+            <p id="totalCredits">Total Credits: 0</p>
+            <div id="courses" class="courses"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy;2024 Denise Sunshine Smith | Colorado</p>
+            <img src="images/colorado-flag.jpg" alt="Colorado Flag">
+        </div>
+        <p>Last Update: <span id="lastUpdated"></span></p>
+    </footer>
 </body>
 </html>
