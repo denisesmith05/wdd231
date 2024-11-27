@@ -20,16 +20,41 @@ const courses = [
 ];
 
 function displayCourses(filteredCourses) {
+    // const courseContainer = document.getElementById("courses");
+    // courseContainer.innerHTML = "";
+    // filteredCourses.forEach((course) => {
+    //     const courseCard = document.createElement("div");
+    //     courseCard.className = "course";
+    //     if (course.completed) courseCard.classList.add("completed");
+    //     courseCard.textContent = `${course.code}`;
+    //     courseContainer.appendChild(courseCard);
+    // });
+    // updateTotalCredits(filteredCourses);
     const courseContainer = document.getElementById("courses");
-    courseContainer.innerHTML = "";
+    courseContainer.innerHTML = ""; // Clear the container
+
     filteredCourses.forEach((course) => {
         const courseCard = document.createElement("div");
         courseCard.className = "course";
-        if (course.completed) courseCard.classList.add("completed");
-        courseCard.textContent = `${course.code}`;
+
+        // Create a span for the course title
+        const courseTitle = document.createElement("span");
+        courseTitle.textContent = course.code;
+
+        // If the course is completed, add a checkmark
+        if (course.completed) {
+            const checkmark = document.createElement("span");
+            checkmark.textContent = " ✓"; // Add the checkmark
+            checkmark.className = "checkmark"; // Optional: for styling
+            courseTitle.appendChild(checkmark);
+        }
+
+        // Append the course title to the course card
+        courseCard.appendChild(courseTitle);
         courseContainer.appendChild(courseCard);
     });
-    updateTotalCredits(filteredCourses);
+
+    updateTotalCredits(filteredCourses); // Update total credits
 }
 
 function filterCourses(filter) {
