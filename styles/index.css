@@ -1,4 +1,36 @@
 /* Base Mobile Styles (Screens < 768px) */
+/* Mobile Grid Layout */
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column; /* Stacks sections vertically */
+        gap: 1rem; /* Adds spacing between sections */
+        padding: 1rem;
+    }
+
+    .grid-container section {
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-container img {
+        max-width: 100%; /* Makes the image responsive */
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 8px; /* Optional: adds rounded corners */
+        display: block; /* Ensures no extra margin issues */
+        margin: 0 auto; /* Centers the image */
+    }
+
+    .grid-container section h2,
+    .grid-container section ul,
+    .grid-container section figure {
+        margin-bottom: 1rem;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -89,6 +121,7 @@ nav {
     gap: 1rem;
     padding: 1rem;
 } */
+
 
 /* Testing this section of code */
 /* Large Screens: Side by Side Layout */
