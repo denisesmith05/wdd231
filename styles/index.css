@@ -1,12 +1,17 @@
 /* Base Mobile Styles (Screens < 768px) */
 /* Mobile Grid Layout */
 @media (max-width: 768px) {
-    .grid-container {
-        display: flex;
-        flex-direction: column; /* Stacks sections vertically */
-        gap: 1rem; /* Adds spacing between sections */
+    /* .grid-container {
+        display: block;
+        flex-direction: column;
+        gap: 1rem;
         padding: 1rem;
+    } */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px;
     }
+
 
     .grid-container section {
         border: 2px solid #ccc;
@@ -20,7 +25,7 @@
         max-width: 100%; /* Makes the image responsive */
         height: auto; /* Maintains aspect ratio */
         border-radius: 8px; /* Optional: adds rounded corners */
-        display: block; /* Ensures no extra margin issues */
+        display: flex; /* Ensures no extra margin issues */
         margin: 0 auto; /* Centers the image */
     }
 
