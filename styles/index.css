@@ -125,23 +125,23 @@ nav {
 
 /* Testing this section of code */
 /* Large Screens: Side by Side Layout */
-.grid-container {
+/* .grid-container {
     display: flex;
     gap: 2rem;
     padding: 2rem;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
 }
 
 .grid-container section {
-    flex: 1; /* Makes sections equal in width */
+    flex: 1;
     border: 2px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 18rem;
-}
+} */
 
 
 .course {
