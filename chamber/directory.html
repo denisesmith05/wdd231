@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Cañon City Chamber of Commerce Directory">
+    <meta name="description" content="Explore member businesses in the Cañon City Chamber of Commerce.">
+    <meta name="author" content="Denise Smith">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Directory - Cañon City Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Our Members</h1>
+            <button id="toggleView">Toggle View</button>
+            <div id="directory" class="grid-view"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. All Rights Reserved.</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/directory.js"></script>
+</body>
+</html>

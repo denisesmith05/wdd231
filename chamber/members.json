@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Cañon City Coffee Co.",
+        "address": "123 Market St, Timbuktu",
+        "phone": "(555) 123-4567",
+        "website": "https://cañoncitycoffeeco.com",
+        "image": "coffee.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Cañon City Books",
+        "address": "456 Library Lane, Timbuktu",
+        "phone": "(555) 987-6543",
+        "website": "https://cañoncitybooks.com",
+        "image": "books.jpg",
+        "membershipLevel": 2
+    }
+]
