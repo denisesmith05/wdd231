@@ -31,6 +31,9 @@ header {
 }
 
 /* Header Styles */
+header nav img {
+    height: 5rem;
+}
 header nav ul {
     list-style: none;
     display: flex;
@@ -48,8 +51,80 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #fdbfc9;
+    color: yellow;
     border-radius: 5px;
+}
+
+.hero {
+    /* position: relative;
+    background-image: url('images/royal-gorge-bridge.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center; */
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .cta {
+    z-index: 2;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    /* font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: navy;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+    position: absolute;
+    bottom: 20px; /* Distance from the top of the hero section */
+    right: 20px; /* Distance from the right edge of the hero section */
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3; /* Ensures the button is above the image */
+}
+
+.hero button:hover {
+    background-color: #0055aa; /* Button hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
 }
 
 /* Member Card Styling */
