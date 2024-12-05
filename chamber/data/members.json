@@ -1,0 +1,67 @@
+{
+    "businesses": [
+      {
+        "name": "Marie's Cleaning Plus",
+        "address": "York Ave, Canon City, CO",
+        "phone": "(719) 123-4567",
+        "website": "http://www.mariescleaningplus.com",
+        "image": "maries-cleaning-plus.jpg",
+        "membership_level": 2,
+        "additional_info": "Reliable house cleaning service specializing in homes and offices."
+      },
+      {
+        "name": "Choppin IT Up Electronics",
+        "address": "Macon Ave, Canon City, CO",
+        "phone": "(719) 234-5678",
+        "website": "http://www.choppinitupelectronics.com",
+        "image": "choppin-it-up.jpg",
+        "membership_level": 1,
+        "additional_info": "Mobile phone repair and electronics services."
+      },
+      {
+        "name": "Red Ball Sales Cleaners",
+        "address": "Sells Ave, Canon City, CO",
+        "phone": "(719) 345-6789",
+        "website": "http://www.redballsalescleaners.com",
+        "image": "red-ball-sales.jpg",
+        "membership_level": 3,
+        "additional_info": "Specializes in both commercial and residential cleaning services."
+      },
+      {
+        "name": "Johnny's Plumbing & Hydronics Co",
+        "address": "S 8th St, Canon City, CO",
+        "phone": "(719) 456-7890",
+        "website": "http://www.johnnysplumbing.com",
+        "image": "johnnys-plumbing.jpg",
+        "membership_level": 2,
+        "additional_info": "Experienced plumbing and hydronics services for residential and commercial clients."
+      },
+      {
+        "name": "Pike's Cleaning LLC",
+        "address": "Main St, Canon City, CO",
+        "phone": "(719) 567-8901",
+        "website": "http://www.pikescleaning.com",
+        "image": "pikes-cleaning.jpg",
+        "membership_level": 3,
+        "additional_info": "Cleaning services with a focus on both residential and commercial clients."
+      },
+      {
+        "name": "Royal Gorge Rafting & Zip Line Tours",
+        "address": "Royal Gorge Blvd, Canon City, CO",
+        "phone": "(719) 275-7238",
+        "website": "http://www.royalgorgerafting.com",
+        "image": "royal-gorge-rafting.jpg",
+        "membership_level": 3,
+        "additional_info": "Adventure tours, including white-water rafting and zip lining at the Royal Gorge."
+      },
+      {
+        "name": "Big Horn Sheep Sports",
+        "address": "Hwy 50, Canon City, CO",
+        "phone": "(719) 275-2772",
+        "website": "http://www.bighornsheepsports.com",
+        "image": "bighorn-sports.jpg",
+        "membership_level": 1,
+        "additional_info": "Outdoor equipment retailer specializing in camping, hiking, and climbing gear."
+      }
+    ]
+}  

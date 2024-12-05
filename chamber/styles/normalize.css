@@ -1,3 +1,10 @@
+/* normalize.css - CSS reset for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,40 +12,4 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: #003366;
-    padding: 10px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-}
-
-.list-view {
-    display: block;
-}
-
-.card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: #fff;
-}
-
-footer {
-    text-align: center;
-    background-color: #003366;
-    color: #fff;
-    padding: 10px 0;
 }

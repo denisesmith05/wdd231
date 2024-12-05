@@ -20,29 +20,85 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Canon City Chamber of Commerce Logo">
+                <span>Cañon City Chamber of Commerce</span>
+            </a>
+            <nav>
+                <ul class="desktop-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+                <button class="hamburger-menu" aria-label="Open navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Royal Gorge Bridge and Park">
+            <div class="cta">
+                <h1>Welcome to Cañon City</h1>
+                <button>Get Keynote Tickets</button>
+            </div>
+        </section>
+        <section class="info-sections">
+            <div class="events">
+                <h2>Events</h2>
+                <p>Upcoming community events will be listed here.</p>
+            </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <p>Sunny, 75°F</p>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li>Tuesday: 90°F</li>
+                    <li>Wednesday: 89°F</li>
+                    <li>Thursday: 68°F</li>
+                </ul>
+            </div>
+        </section>
         <section>
             <h1>Our Members</h1>
             <button id="toggleView">Toggle View</button>
-            <div id="directory" class="grid-view"></div>
+            <div id="directory" class="grid-view">
+                <!-- Member cards will be dynamically populated here -->
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce. All Rights Reserved.</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
+        <div class="footer-content">
+            <p>Cañon City Chamber of Commerce</p>
+            <p>738 Eagle Loop</p>
+            <p>Cañon City, CO 81212</p>
+            <p>info@canoncitycc.org</p>
+            <p>(719) 456-7899</p>
+            <div class="social-media">
+                <nav class="sociallinks">
+                    <a href="https://youtube.com">
+                        <img src="images/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://linkedin.com">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </nav>
+            </div>
+            <p>WDD Class Project</p>
+            <p>Denise Smith</p>
+            <p>&copy; <span id="year"></span> Cañon City Chamber of Commerce</p>
+        </div>
     </footer>
-
     <script src="scripts/directory.js"></script>
 </body>
 </html>

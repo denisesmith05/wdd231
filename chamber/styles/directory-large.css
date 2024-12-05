@@ -1,44 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-}
+/* directory-large.css - Layout adjustments for larger screens */
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: #003366;
-    padding: 10px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
+/* Grid View */
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 16px;
 }
 
+/* List View */
 .list-view {
     display: block;
 }
 
-.card {
-    border: 1px solid #ccc;
+/* Header Styles */
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #003366;
     padding: 15px;
-    background-color: #fff;
+}
+
+header nav ul li a {
+    font-size: 1.1em;
 }
 
 footer {
-    text-align: center;
-    background-color: #003366;
-    color: #fff;
-    padding: 10px 0;
+    font-size: 1.1em;
+    padding: 20px 0;
 }

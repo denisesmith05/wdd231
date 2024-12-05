@@ -32,3 +32,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchMembers();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleViewButton = document.getElementById('toggleView');
+    const directory = document.getElementById('directory');
+
+    // Populate directory with example data
+    const members = [
+        { name: "Business 1", email: "info@business1.com", phone: "123-456-7890" },
+        { name: "Business 2", email: "info@business2.com", phone: "098-765-4321" },
+    ];
+
+    function populateDirectory() {
+        directory.innerHTML = members.map(member => `
+            <div class="member-card">
+                <h3>${member.name}</h3>
+                <p>Email: ${member.email}</p>
+                <p>Phone: ${member.phone}</p>
+            </div>
+        `).join('');
+    }
+
+    // Toggle between grid and list views
+    toggleViewButton.addEventListener('click', () => {
+        directory.classList.toggle('grid-view');
+        directory.classList.toggle('list-view');
+    });
+
+    populateDirectory();
+});
