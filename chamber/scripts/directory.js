@@ -61,7 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
             logo.setAttribute('alt', 'Logo of {member.businessName}');
             logo.setAttribute('lazy', 'loading');
             logo.setAttribute('width', '340');
+
+            card.appendChild(businessName);
+            card.appendChild(industry);
+            card.appendChild(logo);
+            address.appendChild(email);
+            address.appendChild(phone);
+            address.appendChild(website);
+            card.appendChild(address);
             
+            cards.appendChild(card);
         });
     }
 
