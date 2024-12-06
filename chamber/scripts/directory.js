@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    
+
 //Line 21 to 39 is from temple example 
     const gridbutton = document.querySelector("#grid");
     const listbutton = document.querySelector("#list");
@@ -42,14 +42,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const displayMembers = (members) => {
         members.forEach((member) => {
-            let card = document.createElement('h3');
+            let card = document.createElement('article');
+            let businessName = document.createElement('h3');
             let industry = document.createElement('p');
             let logo = document.createElement('img');
-            let address = document.createElement('h3');
-            let card = document.createElement('h3');
-            let card = document.createElement('h3');
-            let card = document.createElement('h3');
-            let card = document.createElement('h3');
+            let address = document.createElement('ul');
+            let email = document.createElement('li');
+            let phone = document.createElement('li');
+            let website = document.createElement('li');
+
+            businessName.textContent = '${member.businessName}';
+            industry.textContent = '${member.industry}';
+            address.textContent = '';
+            email.innerHTML = '<strong>Email:</strong> ${member.email}';
+            phone.innerHTML = '<strong>Phone:</strong> ${member.phone}';
+            website.innerHTML = '<strong>Website:</strong> ${member.website}';
+            logo.setAttribute('src', member.logo);
+            logo.setAttribute('alt', 'Logo of {member.businessName}');
+            logo.setAttribute('lazy', 'loading');
+            logo.setAttribute('width', '340');
+            
         });
     }
 
