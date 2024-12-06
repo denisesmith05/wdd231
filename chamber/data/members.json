@@ -19,13 +19,13 @@
         "additional_info": "Mobile phone repair and electronics services."
       },
       {
-        "name": "Red Ball Sales Cleaners",
-        "address": "Sells Ave, Canon City, CO",
-        "phone": "(719) 345-6789",
-        "website": "http://www.redballsalescleaners.com",
-        "image": "red-ball-sales.jpg",
-        "membership_level": 3,
-        "additional_info": "Specializes in both commercial and residential cleaning services."
+        "name": "Royal Gorge Coffee House",
+        "address": "Main St, Canon City, CO",
+        "phone": "(719) 876-5432",
+        "website": "http://www.royalgorgecoffee.com",
+        "image": "royal-gorge-coffee.jpg",
+        "membership_level": 2,
+        "additional_info": "A cozy coffee house offering locally roasted coffee, pastries, and a relaxing atmosphere."
       },
       {
         "name": "Johnny's Plumbing & Hydronics Co",
