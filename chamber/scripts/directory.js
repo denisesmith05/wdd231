@@ -1,3 +1,5 @@
+// import * as members from '../data/members.json';
+
 document.addEventListener("DOMContentLoaded", () => {
     const directory = document.getElementById("directory");
     // const toggleViewButton = document.getElementById("toggleView");
@@ -11,14 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
     year.textContent = new Date().getFullYear();
     lastModified.textContent = `Last modified: ${document.lastModified}`;
 
-    // Fetch and display members
+    // Fetch members data
     async function fetchMembers() {
         try {
-            const response = await fetch("data/members.json");
-            const data = await response.json();
-            displayMembers(data.businesses);
+            const response = await fetch('./data/members.json');
+            if (!response.ok) throw new Error("Failed to load JSON data");
+            return await response.json();
         } catch (error) {
-            console.error("Error fetching members:", error);
+            console.error(error);
+            return [];
         }
     }
 
@@ -30,12 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
             card.className = "member-card";
 
             card.innerHTML = `
-                <img src="${member.logo}" alt="Logo of ${member.businessName}" loading="lazy" width="340" height="440">
-                <h3>${member.businessName}</h3>
-                <p>${member.industry}</p>
+                <img src="${member.image}" alt="Logo of ${member.name}" loading="lazy" width="340" height="440">
+                <h3>${member.name}</h3>
+                <p>${member.additional_info}</p>
                 <ul>
-                    <li><strong>Email:</strong> ${member.email}</li>
+                    <li><strong>Adress:</strong> ${member.address}</li>
                     <li><strong>Phone:</strong> ${member.phone}</li>
+                    <li><strong>Membership level:</strong> ${member.membership_level}</li>
                     <li><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></li>
                 </ul>
             `;
@@ -47,14 +51,30 @@ document.addEventListener("DOMContentLoaded", () => {
     function toggleView(view) {
         directory.classList.remove("grid-view", "list-view");
         directory.classList.add(`${view}-view`);
+        fetchMembers().then((members) => {
+            displayMembers(members);
+        }).catch((error) => {
+            console.error("Error fetching members:", error);
+        });
     }
 
     gridButton.addEventListener("click", () => toggleView("grid"));
     listButton.addEventListener("click", () => toggleView("list"));
 
-    // Initial fetch and rendering
-    fetchMembers();
+});
 
+    // Initial fetch and rendering
+    // fetchMembers();
+    // // Fetch and display members
+    // async function fetchMembers() {
+    //     try {
+    //         const data = fetch("../data/members.json").then((response) => response.json());
+            
+    //         displayMembers(data.businesses);
+    //     } catch (error) {
+    //         console.error("Error fetching members:", error);
+    //     }
+    // }
 // //Line 21 to 39 is from temple example 
 //     const gridbutton = document.querySelector("#grid");
 //     const listbutton = document.querySelector("#list");
@@ -124,4 +144,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //     // Initial fetch and rendering
 //     fetchMembers();
-});
