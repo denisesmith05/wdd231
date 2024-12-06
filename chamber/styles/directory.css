@@ -16,7 +16,8 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 /* Ensure the layout never overflows */
@@ -34,13 +35,15 @@ header {
 header nav img {
     height: 5rem;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     background-color: #003366;
     padding: 10px;
-    flex-wrap: wrap; /* Allow nav items to wrap if needed */
+    flex-wrap: wrap;
+    /* Allow nav items to wrap if needed */
 }
 
 header nav ul li a {
@@ -99,8 +102,10 @@ header nav ul li a:hover {
 
 .hero button {
     position: absolute;
-    bottom: 20px; /* Distance from the top of the hero section */
-    right: 20px; /* Distance from the right edge of the hero section */
+    bottom: 20px;
+    /* Distance from the top of the hero section */
+    right: 20px;
+    /* Distance from the right edge of the hero section */
     background-color: #003366;
     color: white;
     border: none;
@@ -108,11 +113,58 @@ header nav ul li a:hover {
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 5px;
-    z-index: 3; /* Ensures the button is above the image */
+    z-index: 3;
+    /* Ensures the button is above the image */
 }
 
 .hero button:hover {
-    background-color: #0055aa; /* Button hover color */
+    background-color: #0055aa;
+    /* Button hover color */
+}
+
+h1 {
+    margin-left: 1rem;
+    color: #003366;
+}
+
+.info-sections {
+    display: flex;
+    /* Enables horizontal alignment */
+    justify-content: space-between;
+    /* Adds space between the sections */
+    align-items: flex-start;
+    /* Aligns the sections at the top */
+    gap: 20px;
+    /* Adds space between the sections */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.info-sections div {
+    flex: 1;
+    /* Ensures equal width for all sections */
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 12rem;
+}
+
+.info-sections h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #003366;
+}
+
+.info-sections ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-sections li {
+    margin-bottom: 5px;
 }
 
 /* Responsive adjustments */
@@ -125,6 +177,13 @@ header nav ul li a:hover {
         font-size: 1rem;
         padding: 8px 16px;
     }
+
+    .info-sections {
+        flex-direction: column;
+        /* Stacks the sections vertically */
+        gap: 10px;
+        /* Reduces the gap for smaller screens */
+    }
 }
 
 /* Member Card Styling */
@@ -135,7 +194,8 @@ header nav ul li a:hover {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%; /* Make cards responsive */
+    width: 100%;
+    /* Make cards responsive */
     max-width: 100%;
 }
 
@@ -149,7 +209,73 @@ footer {
     text-align: center;
     background-color: #003366;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+}
+
+.contact-info {
+    flex: 1;
+    /* Makes the contact info take one portion of the space */
+    margin-right: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    flex: 1;
+    /* Takes equal space */
+    text-align: center;
+}
+
+/* .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+} */
+
+.sociallinks a {
+    margin: 0 10px;
+    /* text-decoration: none;
+    transition: transform 0.3s ease-in-out; */
+}
+
+.sociallinks a:hover {
+    transform: scale(1.2);
+}
+
+.sociallinks img {
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.extra-info {
+    flex: 1;
+    /* Takes the remaining space */
+    text-align: center;
+}
+
+.extra-info p {
+    margin: 5px 0;
 }
 
 /* Utility Styles */
@@ -169,13 +295,26 @@ footer {
     }
 
     .member-card {
-        width: 100%; /* Ensure cards take full width */
-        margin-bottom: 10px; /* Add margin between cards */
+        width: 100%;
+        /* Ensure cards take full width */
+        margin-bottom: 10px;
+        /* Add margin between cards */
     }
 
     footer {
         font-size: 0.9em;
         padding: 15px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info,
+    .extra-info {
+        margin: 10px 0;
+        text-align: center;
     }
 }
 
@@ -205,4 +344,117 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
     }
+}
+.members {
+    width: 98%;
+    margin: 0 auto;
+}
+.members .menu {
+    margin: 2rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #bed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-height: 80px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.members .menu button {
+    padding: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 5px;
+
+}
+
+.members section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+.members-info .grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 5px;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.members-info .grid section {
+    text-align: center;
+    border: 1px solid navy;
+    padding: 10px;
+    box-shadow: 0 0 10px #333
+}
+
+.members-info .grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.members-info .grid h3 {
+    font-family: "Caveat", cursive;
+}
+
+.members-info .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.members-info .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.members-info .list section>* {
+    margin: 0 1rem;
+}
+
+.members-info .list section img {
+    display: none;
+    width: 10px;
+    /* smaller viewports only */
+}
+
+.members-info .list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.members-info .list section:nth-child(even) {
+    background-color: #bed;
+}
+
+.members-info section h3 {
+    font-size: 1.5rem;
+}
+
+.members-info section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+.members-info section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+.members-info img {
+    height: 80px;
+    max-width: 100px;
+    /* Images are jerks - Seattle*/
 }

@@ -10,54 +10,74 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Fetch member data
     async function fetchMembers() {
-        const response = await fetch("data/members.json");
-        const members = await response.json();
+        try {
+            const response = await fetch("data/members.json");
+            const data = await response.json();
+            displayMembers(data.businesses);
+        } catch (error) {
+            console.error("Error fetching members:", error);
+        }
+    }
 
+    
+//Line 21 to 39 is from temple example 
+    const gridbutton = document.querySelector("#grid");
+    const listbutton = document.querySelector("#list");
+    const display = document.querySelector("article");
+
+    // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+    gridbutton.addEventListener("click", () => {
+        // example using arrow function
+        display.classList.add("grid");
+        display.classList.remove("list");
+    });
+
+    listbutton.addEventListener("click", showList); // example using defined function
+
+    function showList() {
+        display.classList.add("list");
+        display.classList.remove("grid");
+    }
+
+    const displayMembers = (members) => {
+        members.forEach((member) => {
+            let card = document.createElement('h3');
+            let industry = document.createElement('p');
+            let logo = document.createElement('img');
+            let address = document.createElement('h3');
+            let card = document.createElement('h3');
+            let card = document.createElement('h3');
+            let card = document.createElement('h3');
+            let card = document.createElement('h3');
+        });
+    }
+
+
+
+    // Footer code
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last modified: ${document.lastModified}';
+
+    // Display members
+    function displayMembers(members) {
         directory.innerHTML = members.map(member => `
             <div class="card">
-                <img src="images/${member.image}" alt="${member.name}">
+                <img src="images/${member.image}" alt="${member.name}" class="business-image">
                 <h2>${member.name}</h2>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">Visit Website</a>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
             </div>
         `).join("");
     }
 
-    // Toggle view
+    // Toggle between grid and list views
     toggleViewButton.addEventListener("click", () => {
         directory.classList.toggle("list-view");
         directory.classList.toggle("grid-view");
     });
 
+    // Initial fetch and rendering
     fetchMembers();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleViewButton = document.getElementById('toggleView');
-    const directory = document.getElementById('directory');
-
-    // Populate directory with example data
-    const members = [
-        { name: "Business 1", email: "info@business1.com", phone: "123-456-7890" },
-        { name: "Business 2", email: "info@business2.com", phone: "098-765-4321" },
-    ];
-
-    function populateDirectory() {
-        directory.innerHTML = members.map(member => `
-            <div class="member-card">
-                <h3>${member.name}</h3>
-                <p>Email: ${member.email}</p>
-                <p>Phone: ${member.phone}</p>
-            </div>
-        `).join('');
-    }
-
-    // Toggle between grid and list views
-    toggleViewButton.addEventListener('click', () => {
-        directory.classList.toggle('grid-view');
-        directory.classList.toggle('list-view');
-    });
-
-    populateDirectory();
 });
