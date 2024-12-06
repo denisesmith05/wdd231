@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fetch and display members
     async function fetchMembers() {
         try {
-            const response = await fetch("chamber/data/members.json");
+            const response = await fetch("data/members.json");
             const data = await response.json();
             displayMembers(data.businesses);
         } catch (error) {

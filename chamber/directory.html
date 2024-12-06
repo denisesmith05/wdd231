@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
-    <script src="scripts/directory.js" defer></script>
     <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:title" content="Royal Gorge Bridge and Park - Cañon City Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -73,7 +72,7 @@
                     <button id="list">📄List</button>
                 </div>
         </section>
-        <section class="members-info">
+        <section id="directory" class="members-info">
             <article class="grid">
                 <!--Dynamilcally generated member info sections will be displayed here-->
             </article>
@@ -107,8 +106,10 @@
                 <p>WDD 231 Class Project</p>
                 <p>Denise Smith</p>
                 <p>&copy; <span id="year"></span> Cañon City Chamber of Commerce</p>
+                <p id="lastModified"></p>
             </div>
         </div>
     </footer>
+    <script src="scripts/directory.js" defer></script>
 </body>
 </html>
