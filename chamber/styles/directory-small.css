@@ -184,7 +184,7 @@ h1 {
     }
 
     .desktop-nav {
-        display: none;
+        display: flex;
         flex-direction: column;
         background-color: #003366;
         position: absolute;
