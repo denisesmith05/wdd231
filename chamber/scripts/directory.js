@@ -62,12 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
     listButton.addEventListener("click", () => toggleView("list"));
 
     document.addEventListener("DOMContentLoaded", () => {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const menu = document.querySelector("nav ul");
-    
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
-        });
+        const navButton = document.getElementById("navButton");
+        const navMenu = document.getElementById("navMenu");
+         
+            navButton.addEventListener("click", () => {
+        const isOpen = navButton.getAttribute("aria-expanded") === "true";
+                navButton.setAttribute("aria-expanded", !isOpen);
+                navButton.classList.toggle("open");
+                navMenu.classList.toggle("open");
+            });
     });
 
 });

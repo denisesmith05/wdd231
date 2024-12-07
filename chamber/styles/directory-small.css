@@ -207,6 +207,145 @@ h1 {
         gap: 10px;
         /* Reduces the gap for smaller screens */
     }
+
+    /*Testing code below*/
+
+    nav {
+        font-family: var(--text-font);
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 9rem;
+        width: 100%;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--light-text);
+        transition: color 0.3s ease;
+    }
+    
+    nav a:hover {
+        color: var(--primary-color);
+    }
+    
+    #navButton {
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem 0.75rem;
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        border: none;
+        cursor: pointer;
+    }
+    
+    #navButton::before {
+        content: "≣";
+    }
+    
+    #navButton.open::before {
+        content: "✖";
+    }
+    
+    .nav-menu {
+        margin: 0 auto;
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+    }
+    
+    .nav-menu.open {
+        max-height: 500px; /* Set a value sufficient to show all items */
+        opacity: 1;
+    }
+    
+    .nav-menu li {
+        background-color: rgba(0, 79, 122, 0.55);
+        margin: 0.5rem 0;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 0.75rem;
+    }
+    
+    .active::before {
+        content: "• ";
+    }
+ 
+ 
+    nav {
+        font-family: var(--text-font);
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 9rem;
+        width: 100%;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: var(--light-text);
+        transition: color 0.3s ease;
+    }
+    
+    nav a:hover {
+        color: var(--primary-color);
+    }
+    
+    #navButton {
+        display: block;
+        font-size: 2rem;
+        padding: 0.5rem 0.75rem;
+        background-color: var(--primary-color);
+        color: var(--light-text);
+        border: none;
+        cursor: pointer;
+    }
+    
+    #navButton::before {
+        content: "≣";
+    }
+    
+    #navButton.open::before {
+        content: "✖";
+    }
+    
+    .nav-menu {
+        margin: 0 auto;
+        max-width: 760px;
+        display: flex;
+        flex-direction: column;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+    }
+    
+    .nav-menu.open {
+        max-height: 500px; /* Set a value sufficient to show all items */
+        opacity: 1;
+    }
+    
+    .nav-menu li {
+        background-color: rgba(0, 79, 122, 0.55);
+        margin: 0.5rem 0;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 0.75rem;
+    }
+    
+    .active::before {
+        content: "• ";
+    }
 }
 
 /* Member Card Styling */
