@@ -4,6 +4,36 @@
 .grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
+}
+
+/* List View */
+.list-view {
+    display: block;
+}
+
+/* Header Styles */
+header nav ul {
+    display: flex;
+    
+    background-color: #003366;
+}
+
+header nav ul li a {
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 1.1em;
+    
+}
+@media (min-width: 768px) {
+  
+
+  /* Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
 }
 
@@ -27,4 +57,15 @@ header nav ul li a {
 footer {
     font-size: 1.1em;
     padding: 20px 0;
+}
+
+    .menu-toggle {
+        display: none;
+    }
+    section h2 {
+        text-align: center;
+    }
+
+    
+    
 }
