@@ -218,6 +218,7 @@ h1 {
 
     nav a {
         text-decoration: none;
+        background-color: #003366;
         color: white;
         transition: color 0.3s ease;
     }
