@@ -61,6 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
     gridButton.addEventListener("click", () => toggleView("grid"));
     listButton.addEventListener("click", () => toggleView("list"));
 
+    document.getElementById("hamburger").addEventListener("click", function () {
+        const navMenu = document.getElementById("nav-menu");
+        navMenu.classList.toggle("active");
+    });
+    
+
 });
 
     // Initial fetch and rendering
