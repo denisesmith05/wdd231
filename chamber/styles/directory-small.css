@@ -280,10 +280,9 @@ h1 {
  
  
     nav {
-        font-family: var(--text-font);
         font-weight: 600;
         text-align: center;
-        color: white;
+        color: #003366;
         position: absolute;
         top: 9rem;
         width: 100%;
@@ -291,20 +290,20 @@ h1 {
     
     nav a {
         text-decoration: none;
-        color: var(--light-text);
+        color: white;
         transition: color 0.3s ease;
     }
     
     nav a:hover {
-        color: var(--primary-color);
+        color: yellow;
     }
     
     #navButton {
         display: block;
         font-size: 2rem;
         padding: 0.5rem 0.75rem;
-        background-color: var(--primary-color);
-        color: var(--light-text);
+        background-color: #003366;
+        color: white;
         border: none;
         cursor: pointer;
     }
