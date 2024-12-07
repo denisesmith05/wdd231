@@ -61,11 +61,14 @@ document.addEventListener("DOMContentLoaded", () => {
     gridButton.addEventListener("click", () => toggleView("grid"));
     listButton.addEventListener("click", () => toggleView("list"));
 
-    document.getElementById("hamburger").addEventListener("click", function () {
-        const navMenu = document.getElementById("nav-menu");
-        navMenu.classList.toggle("active");
-    });
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector("nav ul");
     
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    });
 
 });
 

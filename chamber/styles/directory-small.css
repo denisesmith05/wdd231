@@ -40,50 +40,6 @@ header nav {
     position: relative;
 }
 
-nav {
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem;
-}
-
-.menu {
-    display: none;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu.active {
-    display: flex;
-}
-
-.menu li {
-    align-items: center;
-    padding: 0.5rem 0;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.menu a:hover,
-.menu a.active {
-    color: #A0D468;
-}
-
-.menu-toggle {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-    margin: 0;
-    padding: 0.5rem;
-}
 
 header nav ul {
     list-style: none;
@@ -227,25 +183,29 @@ h1 {
         padding: 8px 16px;
     }
 
+    .desktop-nav {
+        display: none;
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .desktop-nav.active {
+        display: flex;
+    }
+
+    .desktop-nav li {
+        text-align: center;
+    }
+
     .info-sections {
         flex-direction: column;
         /* Stacks the sections vertically */
         gap: 10px;
         /* Reduces the gap for smaller screens */
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    #nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #nav-menu.active {
-        display: flex;
     }
 }
 
