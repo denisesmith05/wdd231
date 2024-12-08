@@ -61,6 +61,35 @@ document.addEventListener("DOMContentLoaded", () => {
     gridButton.addEventListener("click", () => toggleView("grid"));
     listButton.addEventListener("click", () => toggleView("list"));
 
+    document.addEventListener("DOMContentLoaded", () => {
+    const navButton = document.getElementById("navButton");
+    const navMenu = document.querySelector(".nav-menu");
+
+    // Toggle navigation menu on button click
+    navButton.addEventListener("click", () => {
+        const isOpen = navButton.getAttribute("aria-expanded") === "true";
+
+        // Update the aria-expanded attribute for accessibility
+        navButton.setAttribute("aria-expanded", !isOpen);
+
+        // Toggle the open class on the button and menu
+        navButton.classList.toggle("open");
+        navMenu.classList.toggle("open");
+    });
+
+    // Dynamic footer year and last modified date
+    const yearElement = document.getElementById("year");
+    const lastModifiedElement = document.getElementById("lastModified");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+    }
+});
+
     // document.addEventListener("DOMContentLoaded", () => {
     //     const navButton = document.getElementById("navButton");
     //     const navMenu = document.getElementById("navMenu");
