@@ -29,6 +29,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
+    background-color: #003366;
 }
 
 /* Header Styles */
@@ -271,7 +272,7 @@ h1 {
     }
     
     .nav-menu li {
-        background-color: rgba(0, 79, 122, 0.55);
+        background-color: #003366;
         padding: 0.5rem 0;
         align-items: center;
     }
