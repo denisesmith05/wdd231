@@ -1,0 +1,111 @@
+/* Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* List View */
+.list-view {
+    display: block;
+}
+
+/* Header Styles */
+header nav ul {
+    display: flex;
+    
+    background-color: #003366;
+}
+
+header nav ul li a {
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 1.1em;
+    
+}
+@media (min-width: 768px) {
+  
+
+  /* Grid View */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+/* List View */
+.list-view {
+    display: block;
+}
+
+/* Header Styles */
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #003366;
+    padding: 15px;
+}
+
+header nav ul li a {
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 1.1em;
+    padding: 20px 0;
+}
+
+    .menu-toggle {
+        display: none;
+    }
+    section h2 {
+        text-align: center;
+    }
+
+    /*Testing code below*/
+    nav {
+        font-weight: 600;
+        text-align: center;
+        color: #003366;
+        width: 100%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: yellow;
+    }
+
+    #navButton {
+        display: none;
+    }
+
+}
+
+.weather, .forecast, .members {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fdfdfd;
+}
+
+.spotlight-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.spotlight-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
