@@ -94,6 +94,9 @@ footer {
     border: 1px solid #ccc;
     border-radius: 8px;
     background: #fdfdfd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .spotlight-card {
@@ -101,11 +104,13 @@ footer {
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem 0;
-    background: #fff;
+    background: fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width:18rem;
 }
 .spotlight-card img {
     max-width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
+    width:15rem
 }
