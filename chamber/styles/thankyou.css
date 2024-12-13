@@ -66,6 +66,74 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Reset margin and padding for all elements to prevent overflow */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* Ensure the layout never overflows */
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: #003366;
+}
+
+/* Header Styles */
+header nav img {
+    height: 5rem;
+    /* opacity: 0;
+    transition: opacity 1ms ease-in-out; */
+} 
+/* header nav img:hover {
+    opacity: 1;
+} */
+
+header nav {
+    position: relative;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #003366;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Allow nav items to wrap if needed */
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    color: yellow;
+    border-radius: 5px;
+}
+
 .hero {
     /* position: relative;
     background-image: url('images/royal-gorge-bridge.jpg');
@@ -599,4 +667,40 @@ footer p {
     max-width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
+}
+
+#thank-you {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#thank-you h1 {
+    color: #3b3b3b;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#thank-you p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#user-info {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#user-info p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+#user-info p strong {
+    color: #3b3b3b;
 }

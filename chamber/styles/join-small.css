@@ -600,3 +600,231 @@ footer p {
     height: auto;
     margin-bottom: 0.5rem;
 }
+
+/* Join Form Section */
+#join-form {
+    background-color: #f7f7f7;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+#join-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select, textarea {
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3b3b3b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #8afdff;
+}
+
+/* Membership Cards Section */
+
+#membership-levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Membership Card Styling */
+.membership-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Initial state for fade-in animation */
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+}
+
+.membership-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8afdff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.membership-card a:hover {
+    color: #3b3b3b;
+}
+
+/* Hover Effect */
+.membership-card:hover {
+    transform: scale(1.1); /* Scale up slightly */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered Animation for Cards */
+.membership-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    #membership-levels {
+        flex-direction: column;
+    }
+
+    .membership-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #membership-levels {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+    
+    /* Membership Card Styling */
+    .membership-card {
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0; /* Initial state for fade-in animation */
+        animation: fadeIn 0.8s ease forwards;
+    }
+    
+    .membership-card h3 {
+        font-size: 18px;
+        color: #3b3b3b;
+        margin-bottom: 10px;
+    }
+    
+    .membership-card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #8afdff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .membership-card a:hover {
+        color: #3b3b3b;
+    }
+    
+    /* Hover Effect */
+    .membership-card:hover {
+        transform: scale(1.1); /* Scale up slightly */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+    }
+    
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Staggered Animation for Cards */
+    .membership-card:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+    
+    .membership-card:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+    
+    .membership-card:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+    
+    .membership-card:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+    
+}

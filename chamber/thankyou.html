@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <img src="images/cc-logo.png" alt="Canon City Chamber of Commerce Logo">
+                <button id="navButton" aria-expanded="false">&#9776;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="thank-you">
+            <h1>Thank You for Joining Us!</h1>
+            <p>Here is the information you submitted:</p>
+            <div id="user-info">
+                <p><strong>First Name:</strong> <span id="first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+                <p><strong>Email Address:</strong> <span id="email"></span></p>
+                <p><strong>Mobile Phone Number:</strong> <span id="mobile"></span></p>
+                <p><strong>Business/Organization Name:</strong> <span id="business-name"></span></p>
+                <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Fetch form data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        document.getElementById("first-name").textContent = urlParams.get("firstName") || "Not provided";
+        document.getElementById("last-name").textContent = urlParams.get("lastName") || "Not provided";
+        document.getElementById("email").textContent = urlParams.get("email") || "Not provided";
+        document.getElementById("mobile").textContent = urlParams.get("mobile") || "Not provided";
+        document.getElementById("business-name").textContent = urlParams.get("organization") || "Not provided";
+        document.getElementById("timestamp").textContent = urlParams.get("timestamp") || "Not provided";
+    </script>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p>Cañon City Chamber of Commerce</p>
+            <p>738 Eagle Loop</p>
+            <p>Cañon City, CO 81212</p>
+            <p>info@canoncitycc.org</p>
+            <p>(719) 456-7899</p>
+        </div>
+        <div class="social-media">
+            <nav class="sociallinks">
+                <a href="https://youtube.com">
+                    <img src="images/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+            </nav>
+        </div>
+        <div class="extra-info">
+            <p>WDD 231 Class Project</p>
+            <p>Denise Smith</p>
+            <p>&copy; <span id="year"></span> Cañon City Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </div>
+</footer>
+<script src="scripts/thankyou.js" defer></script>
+<script src="scripts/index.js" defer></script>
+<script src="scripts/directory.js" defer></script>
+</html>
