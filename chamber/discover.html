@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Cañon City Chamber of Commerce</title>
+    <meta name="title" content="Cañon City Chamber of Commerce Discover Page">
+    <meta name="description" content="Discover the attractions, events, and information in Cañon City.">
+    <meta name="author" content="Denise Smith">
+    <link rel="icon" type="image/x-icon" href="images/cc-logo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <nav>
+            <img src="images/cc-logo.png" alt="Canon City Chamber of Commerce Logo">
+            <button id="navButton" aria-expanded="false">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <img src="images/royal-gorge-bridge2.jpg" alt="Royal Gorge Bridge">
+        <div class="cta">
+            <h1>Discover Cañon City</h1>
+        </div>
+    </section>
+
+    <section class="discover-content">
+        <div class="sidebar">
+          <h2>Welcome Back!</h2>
+          <p id="last-visit-message"></p>
+          <!-- Add content like demographics, statistical data, etc. -->
+          <p>Explore local events and attractions.</p>
+      
+          <!-- Calendar Section -->
+          <section id="calendar">
+            <h2>Calendar</h2>
+            <div id="calendar-container"></div>
+          </section>
+        </div>
+      
+        <div class="main-gallery">
+          <h2>Local Attractions</h2>
+          <div class="gallery">
+            <img src="images/royal-gorge.jpg" alt="Royal Gorge" class="lazy-load" loading="lazy">
+            <img src="images/echo-canyon.jpg" alt="Echo Canyon" class="lazy-load" loading="lazy">
+            <img src="images/flume.jpg" alt="The Flume" class="lazy-load" loading="lazy">
+            <img src="images/garden-park.jpg" alt="Garden Park" class="lazy-load" loading="lazy">
+            <img src="images/canon-city.jpg" alt="Cañon City" class="lazy-load" loading="lazy">
+            <img src="images/skyline-drive.jpeg" alt="Skyline Drive" class="lazy-load" loading="lazy">
+          </div>
+        </div>
+      </section>
+      
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <p>Cañon City Chamber of Commerce</p>
+            <p>738 Eagle Loop</p>
+            <p>Cañon City, CO 81212</p>
+            <p>info@canoncitycc.org</p>
+            <p>(719) 456-7899</p>
+        </div>
+        <div class="social-media">
+            <nav class="sociallinks">
+                <a href="https://youtube.com">
+                    <img src="images/youtube.png" alt="Youtube">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+            </nav>
+        </div>
+        <div class="extra-info">
+            <p>WDD 231 Class Project</p>
+            <p>Denise Smith</p>
+            <p>&copy; <span id="year"></span> Cañon City Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts/discover.js" defer></script> <!-- New JS file for Discover page -->
+</body>
+</html>

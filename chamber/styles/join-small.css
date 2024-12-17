@@ -29,6 +29,12 @@ header {
     background-color: #003366;
 }
 
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #003366;
+}
+
 /* Header Styles */
 header nav img {
     height: 5rem;
@@ -827,4 +833,87 @@ button[type="submit"]:hover {
         animation-delay: 0.8s;
     }
     
+}
+
+/* General layout for discovery*/
+.discover-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.main-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.main-gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    height: 12rem;
+}
+
+/* Hover effect for images (desktop only) */
+.main-gallery img:hover {
+    transform: scale(1.1);
+}
+
+#calendar-container {
+    margin-top: 1em;
+}
+
+.calendar {
+width: 100%;
+border-collapse: collapse;
+text-align: center;
+}
+
+.calendar th, .calendar td {
+padding: 0.5em;
+border: 1px solid #3b3b3b;
+}
+
+.calendar th {
+background-color: #8afdff;
+color: #fff;
+}
+
+.calendar td {
+background-color: #fdbfc9;
+color: #3b3b3b;
+}
+
+.calendar td:hover {
+background-color: #8afdff;
+color: #fff;
+cursor: pointer;
+}
+
+.main-gallery {
+padding: 1em;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .discover-content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-gallery {
+        justify-content: center;
+    }
+
+    .main-gallery img {
+        max-width: 100%;
+    }
 }
