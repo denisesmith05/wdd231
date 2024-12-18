@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Cute & Covered</title>
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <link rel="icon" type="image/x-icon" href="images/c-logo.png">
+</head>
+<body>
+    <header>
+        <div class="shop-name">Cute &<br>Covered</div>
+        <nav>
+            <div class="main-hamburger" id="main-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="contacts.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cart">
+        <p>Your Shopping Cart: <span id="cart-count">0</span></p>
+    </section>
+    <main>
+        <h1>Our Products</h1>
+        <nav class="product-nav">
+            <div class="hamburger" id="product-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <div>
+                <li><a href="#" class="nav-btn" data-category="all">All</a></li>
+                </div>
+                <div>
+                <li><a href="#" class="nav-btn" data-category="shirts">Shirts</a></li>
+                </div>
+                <div>
+                <li><a href="#" class="nav-btn" data-category="pants">Pants</a></li>
+                </div>
+                <div>
+                <li><a href="#" class="nav-btn" data-category="shoes">Shoes</a></li>
+                </div>
+                <div>
+                <li><a href="#" class="nav-btn" data-category="swimwear">Swimwear</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="products-grid" id="products-grid">
+            <div class="item-card" data-category="shirts">
+                <img class="item-pic" src="images/clothing1.avif"/>   
+                <button class="cart-btn" id="shirt-btn">Add to Cart</button>
+            </div>
+
+            <div class="item-card" data-category="pants">
+                <img class="item-pic" src="images/clothing2.avif"/>   
+                <button class="cart-btn" id="pants-btn">Add to Cart</button>
+            </div>  
+
+            <div class="item-card" data-category="shoes">
+                <img class="item-pic" src="images/clothing3.avif"/>   
+                <button class="cart-btn" id="shoes-btn">Add to Cart</button>
+            </div> 
+
+            <div class="item-card" data-category="swimwear">
+                <img class="item-pic" src="images/clothing4.jpg"/>   
+                <button class="cart-btn" id="swimwear-btn">Add to Cart</button>
+            </div>
+
+            <div class="item-card" data-category="shirts">
+                <img class="item-pic" src="images/clothing5.jpg"/>   
+                <button class="cart-btn" id="shirt-btn">Add to Cart</button>
+            </div>
+
+            <div class="item-card" data-category="shoes">
+                <img class="item-pic" src="images/clothing6.avif"/>   
+                <button class="cart-btn" id="shoes-btn">Add to Cart</button>
+            </div> 
+
+            <div class="item-card" data-category="swimwear">
+                <img class="item-pic" src="images/clothing7.avif"/>   
+                <button class="cart-btn" id="swimwear-btn">Add to Cart</button>
+            </div>
+
+            <div class="item-card" data-category="pants">
+                <img class="item-pic" src="images/clothing8.avif"/>   
+                <button class="cart-btn" id="pants-btn">Add to Cart</button>
+            </div>
+
+            <div class="item-card" data-category="shirts">
+                <img class="item-pic" src="images/clothing9.avif"/>   
+                <button class="cart-btn" id="shirt-btn">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="email-sign-up">
+            <p>Sign up to see new sales and items:</p>
+            <input type="text" placeholder="your email"/>
+            <button id="sign-up">Sign Up</button>
+            <a href="attributions.html">Attributions</a>
+        </section>
+    </footer>
+
+    <script src="scripts/final-project.js"></script>
+</body>
+</html>

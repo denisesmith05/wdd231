@@ -1,0 +1,91 @@
+@media (min-width: 800px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .shop-name {
+        font-size: 2em;
+    }
+
+    .intro, .featured-products, .contact-info, .products-grid {
+        padding: 40px;
+    }
+
+    .item-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-pic {
+        width: 200px;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Changed layout to grid */
+        gap: 20px;
+    }
+
+    .contact-info form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info form label, .contact-info form input, .contact-info form textarea {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .email-sign-up {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+    
+    .product-nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    /* .product-nav .nav-links {
+        display: flex;
+    } */
+    
+    .nav-btn {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        margin: 0 10px;
+        padding: 8px 16px;
+        
+        border-radius: 4px;
+    }
+    
+    .nav-btn:hover {
+        background: #575757;
+    }
+    
+    .products-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+

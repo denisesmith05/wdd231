@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Ms'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1582794543462-0d7922e50cf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    height: 75px;
+    background: #8afdff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    position: relative;
+    z-index: 1000;
+}
+
+.shop-name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 24px;
+    color: #575757;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #575757;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.hamburger {
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: #fff;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.cart {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    margin: 0;
+    color: #8afdff;
+}
+
+.intro p {
+    font-size: 18px;
+}
+
+.featured-products h2 {
+    margin-bottom: 20px;
+}
+.featured-products {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between items */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+}
+
+.item-card {
+    flex: 1 1 200px; /* Allows the item cards to grow and shrink, with a base width of 200px */
+    margin: 10px; /* Adds spacing around each item card */
+    text-align: center; /* Centers the text inside the card */
+}
+
+.item-pic {
+    max-width: 100%; /* Ensures images do not exceed the card width */
+    height: auto; /* Maintains the aspect ratio of the images */
+}
+.products-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 2rem; /* Space between items */
+    padding: 1rem; /* Add padding if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+    height: 150px;
+}
+
+figcaption {
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+
+.cart-btn {
+    background: #575757;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.cart-btn:hover {
+    background: #8afdff;
+    color: #575757;
+}
+
+.email-sign-up {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8afdff;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-nav ul {
+    position: absolute;
+    background-color: #ffcccc;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.product-nav li {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+}
+
+.product-nav ul.show {
+    display: flex;
+} 
+  
+/* Hide navigation by default on small screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
